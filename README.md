@@ -19,12 +19,12 @@ Para ejecutar este proyecto, necesitas:
 
 ## 🚀 Guía de Instalación y Despliegue (Cómo levantar el proyecto)
 
-1. Conexión al Clúster.
+# 1. Conexión al Clúster.
 Abre MongoDB Compass y utiliza tu cadena de conexión (Connection String).
 * Nota: Asegúrate de tener los permisos de red (IP Access List) configurados en Atlas si tienes problemas de conexión.
 
 
-2. Importación de Datos (data/).
+# 2. Importación de Datos (data/).
 Los datos crudos se encuentran en la carpeta data del repositorio.
 * En Compass, crea una base de datos llamada GlobalMarket_DB (o el nombre de tu preferencia).
 * Crea una colección llamada ventas (u otro nombre descriptivo).
@@ -33,7 +33,7 @@ Los datos crudos se encuentran en la carpeta data del repositorio.
 * Importante: Asegúrate de verificar los tipos de datos en la previsualización (ej. que los precios sean Double/Int y no String) antes de finalizar la importación.
 
 
-3. Aplicar Validación de Esquema (src/validation.js).
+# 3. Aplicar Validación de Esquema (src/validation.js).
 Para asegurar la integridad de los datos, aplicamos reglas de validación definidas en el código.
 * Abre el archivo src/validation.js con un editor de texto.
 * Copia el objeto JSON que contiene las reglas $jsonSchema.
@@ -42,7 +42,7 @@ Para asegurar la integridad de los datos, aplicamos reglas de validación defini
   * Esto marcará en rojo cualquier documento que no cumpla con las reglas definidas.
 
 
-4. Ejecución de Pipelines de Agregación (src/pipeline.js)
+# 4. Ejecución de Pipelines de Agregación (src/pipeline.js)
 Para realizar análisis complejos (agrupaciones, sumas, promedios) definidos en el proyecto:
 * Abre el archivo src/pipeline.js.
 * Copia el array de etapas (stages) de la agregación (ej. [ { $match: ... }, { $group: ... } ]).
@@ -51,7 +51,7 @@ Para realizar análisis complejos (agrupaciones, sumas, promedios) definidos en 
  * Compass te mostrará una vista previa de los datos en tiempo real paso por paso.
 
 
-5. Consultas Específicas (src/queries.js)
+# 5. Consultas Específicas (src/queries.js)
 Para búsquedas rápidas definidas en el proyecto:
 * Abre el archivo src/queries.js.
 * Identifica el objeto de filtro (ej. { "campo": "valor" }).
