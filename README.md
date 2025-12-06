@@ -10,6 +10,9 @@ Este repositorio contiene la solución técnica para la migración de la base de
 
 **Dataset utilizado:** Amazon Sales Dataset (Modificado y limpiado).
 
+## 🖥️ Dashboard
+Link:https://charts.mongodb.com/charts-project-0-kshiond/public/dashboards/cd226176-0db8-49e0-88a3-fbd8652902e2
+
 ## 🛠️ Requisitos Previos
 Para ejecutar este proyecto, necesitas:
 
