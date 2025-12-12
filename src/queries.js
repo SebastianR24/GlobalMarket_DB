@@ -30,7 +30,7 @@ db.products.aggregate([
     }
   },
   // Guardamos todo en una colección nueva y limpia
-  { $out: "products_final" }
+  { $out: "products_limpia" }
 ]);
 
 db.getCollection('products_limpia').aggregate(
